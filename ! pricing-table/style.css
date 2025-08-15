@@ -1,0 +1,28 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.container {
+    max-width: 1090px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card {
+    width: calc(33%-20px);
+    background-color: #fff;
+}

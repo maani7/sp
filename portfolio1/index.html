@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 1</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--NAVBAR -->
+    <nav>
+      <div class="left">
+        <a href="#">Imran Badar</a>
+      </div>
+
+      <div class="right">
+        <a
+          href="http://www.github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+
+        <a
+          href="http://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+
+        <a href="mailto: sheikhmaani@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- SECTION 1: Hero -->
+     <section class="hero-section">
+        <div class="text">
+            <h2>Hi, I'm Imran 👋</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic temporibus veritatis id molestias enim labore atque, ullam tenetur eligendi ea minus est quod vel optio molestiae. Laborum officia odio labore dicta expedita, repudiandae sint. Facilis ullam dolore, similique architecto quidem suscipit fugit repellendus. Numquam sunt labore harum aliquid ipsum vero!</p>
+            <div class="links">
+                <a href="#skills">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Skills</span>
+                </a>
+
+                <a href="#testimony">
+                    <i class="fa-solid fa-pen"></i>
+                    <span>Testimony</span>
+                </a>
+
+                <a href="#contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="headshot">
+            <img src="/portfolio1/assets/hero.webp" alt="hero-headshot">
+        </div>
+
+     </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skill-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime, libero nostrum optio veniam reiciendis animi repellendus nam voluptatem ex esse, debitis sequi, quae delectus saepe reprehenderit dolores voluptates asperiores.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="/portfolio1/assets/html-logo.webp" alt="html logo">
+        <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="/portfolio1/assets/css-logo.webp" alt="css logo">
+        <span>CSS</span>
+        </div>
+        
+
+        <div class="cell">
+          <img src="/portfolio1/assets/javascript-logo.webp" alt="java logo">
+        <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="/portfolio1/assets/node-logo.webp" alt="node logo">
+        <span>Node.js</span>
+        </div>
+
+        <div class="cell">
+          <img src="/portfolio1/assets/react-logo.webp" alt="reat logo">
+        <span>React.js</span>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h2>Testimony</h2>
+      <div class="group">
+        <div class="person-details">
+          <img src="/portfolio1/assets/testimony-headshot.webp">
+          <p>John Doe</p> 
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo ea possimus sint dolorem saepe quas, atque fugit eum, nesciunt ullam voluptates ab quidem pariatur doloribus labore iure voluptatum nobis mollitia ipsam. Nulla molestiae facilis nam eveniet iste repellendus exercitationem voluptate, aut cumque pariatur maiores consequuntur enim? Quis, ea nam?
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="group">
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit libero assumenda incidunt quos quisquam possimus commodi asperiores quas suscipit minima omnis, est atque laboriosam at! Cupiditate in ratione, ullam incidunt aliquam animi veniam voluptatibus, fugit enim ex fuga explicabo voluptate distinctio nesciunt quasi tenetur. Sed ipsa veniam assumenda nisi.
+        </div>
+
+        <form >
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+
+          <label for="email" >Email</label>
+          <input type="email" id="email" required>
+
+          <label for="message">Message</label>
+          <textarea  id="message" rows="10" ></textarea>
+
+          
+          <button type="submit" >Send Message</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

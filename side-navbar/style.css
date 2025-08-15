@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;   
+}
+
+.wrapper .sidebar {
+    background-color: #404040;
+    position: fixed;
+    height: 100%;
+    width: 270px;
+    overflow: hidden;
+    left: -270px;
+    transition: all .3s ease;
+     
+}
+
+#btn:checked ~ .sidebar {
+    left: 0px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#btn:checked ~ .menue-btn i::before{
+    content: "\f00d";
+}
+
+#btn:checked ~ .menue-btn {
+    left: 247px; 
+}
+
+.wrapper .menue-btn {
+    height: 45px;
+    width: 45px;
+    color: #f2f2f2;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 10px;
+    background-color: #4a4a4a;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+    transition: all .3s ease;
+}
+
+.wrapper .sidebar .list-item li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.wrapper .sidebar .list-item li:hover {
+    box-shadow: 0px 0 10px 3px #222; 
+    border-top: transparent;
+    border-bottom: transparent;
+}
+
+.wrapper .sidebar .list-item li a i {
+    margin-right: 20px;
+}
+
+.wrapper .sidebar .title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #f2f2f2;
+    line-height: 65px;
+    background-color: #333;
+    text-align: center;
+}
+
+.wrapper .sidebar .list-item li {
+    padding-left: 40px;
+    line-height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid #333;
+    transition: all .3s ease-in;
+
+}
+
+.wrapper .sidebar .list-item .icons {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .sidebar .list-item .icons a {
+    margin: 0 5px;
+    color: #f2f2f2;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    background-color: #4a4a4a;
+    border: 1px solid #383838;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: all .3s ease-in;
+
+}
+
+.wrapper .sidebar .list-item .icons a:hover {
+    background-color: #404040;
+}
